@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  a(href="/") Go back to message board 
+  form(method="POST", action="/new").message-form
+    label(for="messageUser") Username:
+      input(type="text", name="messageUser", id="messageUser", maxLength=16, placeholder='John Doe', required)
+    label(for="messageText") Message: 
+      textarea(name="messageText", id="messageText", placeholder='Hello!', required)
+    button(type="submit") Submit Message

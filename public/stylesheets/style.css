@@ -1,0 +1,29 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+.message {
+  padding: 10px;
+}
+
+.message-form {
+  display: grid;
+  grid-gap: 10px;
+  justify-content: start;
+  padding: 15px;
+}
+
+form label {
+  display: grid;
+} 
+
+.new-post-link {
+  border: 10px black;
+  border-radius: 20%;
+}
