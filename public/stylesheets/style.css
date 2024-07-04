@@ -1,6 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -9,7 +10,11 @@ a {
 
 
 .message {
-  padding: 10px;
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid black;
+  
+  width: max-content;
 }
 
 .message-form {
@@ -22,8 +27,3 @@ a {
 form label {
   display: grid;
 } 
-
-.new-post-link {
-  border: 10px black;
-  border-radius: 20%;
-}

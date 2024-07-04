@@ -4,7 +4,7 @@ block content
   h1= title
   p Welcome to #{title}
   a(href='/new').new-post-link Add a message to the board
-  for message in messages.reverse()
+  for message in messages
     div.message
       p User: #{message.user}
       p Message: #{message.text}

@@ -3,16 +3,19 @@ const { format } = require('date-fns');
 const router = express.Router();
 
 const messages = [
-  {
-    text: 'hi',
-    user: 'David',
-    added: format(new Date(), 'MM/dd/yyyy'),
-  },
+  // {
+  //   text: 'hi',
+  //   user: 'David',
+  //   added: format(new Date(), 'MM/dd/yyyy'),
+  // },
 ];
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Mini Messageboard', messages: messages });
+  res.render('index', {
+    title: 'Mini Messageboard',
+    messages: messages.slice().reverse(),
+  });
 });
 
 router.get('/new', (req, res, next) => {
